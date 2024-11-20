@@ -35,7 +35,7 @@ context master {
         Material            : String;
         MaterialDescription : String;
         PurOrg              : String;
-        Plant : String;
+        Plant               : String;
         Status              : String;
         Quantity            : Integer;
         UoM                 : String;
@@ -55,6 +55,6 @@ context master {
     entity status {
 
         key id          : Integer;
-            description : RequestStatus             //in-open,approval
+            description : RequestStatus //in-open,approval
     }
 }
