@@ -18,6 +18,7 @@
     "watch-portal": "cds watch --open portal/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "sapux": [
+    "app/portal",
     "app/portal"
   ]
 }

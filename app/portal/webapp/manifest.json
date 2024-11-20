@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "buyerportalapplication.portal",
+    "id": "buyerportal.portal",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.15.5",
-      "toolsId": "0d3c0bae-754d-4af2-bc04-3ce55a105017"
+      "toolsId": "10d342ff-033b-4d37-9626-bd84194da1e7"
     },
     "dataSources": {
       "mainService": {
@@ -60,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "buyerportalapplication.portal.i18n.i18n"
+          "bundleName": "buyerportal.portal.i18n.i18n"
         }
       },
       "": {

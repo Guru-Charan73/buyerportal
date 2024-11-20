@@ -11,16 +11,16 @@ module.exports = cds.service.impl(async function () {
 
             // Fetch the current maximum value of "Request Item Number"
             const maxItemNumber = await tx.run(
-                SELECT.one('Request_Item_Number')
+                SELECT.one('RequestNo')
                     .from(Headers)
                     .orderBy({ Request_Item_Number: 'desc' })
             );
 
             // Calculate the next "Request Item Number"
-            const nextItemNumber = maxItemNumber ? maxItemNumber.Request_Item_Number + 1 : 1;
+            const nextItemNumber = maxItemNumber ? maxItemNumber.RequestNo + 1 : 1;
 
             // Set the incremented value in the incoming draft data
-            req.data.Request_Item_Number = nextItemNumber;
+            req.data.RequestNo = nextItemNumber;
 
             console.log(`New draft created with Request Item Number: ${nextItemNumber}`);
 

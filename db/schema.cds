@@ -54,7 +54,7 @@ context master {
 
     entity status {
 
-        key id          : Integer;
+        key id          : String;
             description : RequestStatus //in-open,approval
     }
 }

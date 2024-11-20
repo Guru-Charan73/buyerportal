@@ -5,18 +5,8 @@ annotate service.Headers with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'PR_Number',
-                Value : PR_Number,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'PRType',
-                Value : PRType,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'StatusCode_id',
-                Value : StatusCode_id,
+                Label : 'RequestNumber',
+                Value : RequestNo,
             },
             {
                 $Type : 'UI.DataField',
@@ -25,8 +15,18 @@ annotate service.Headers with @(
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'RequestNo',
-                Value : RequestNo,
+                Label : 'StatusCode_id',
+                Value : StatusCode_id,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'Status',
+                Value : createdAt,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'CreatedBy',
+                Value : createdBy,
             },
         ],
     },

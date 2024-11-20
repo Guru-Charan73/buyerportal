@@ -1,7 +1,7 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Wed Nov 20 2024 13:23:53 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Wed Nov 20 2024 13:57:12 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.15.5|
 |**Generation Platform**<br>SAP Business Application Studio|
@@ -9,8 +9,8 @@
 |**Service Type**<br>Local Cap|
 |**Service URL**<br>http://localhost:4004/odata/v4/buyer-portal/|
 |**Module Name**<br>portal|
-|**Application Title**<br>BuyerPortalApp|
-|**Namespace**<br>buyerportalapplication|
+|**Application Title**<br>BuyerPortalApplication|
+|**Namespace**<br>buyerportal|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.130.0|
 |**Enable Code Assist Libraries**<br>False|
