@@ -1,2 +1,4 @@
-PR_Number,PRType,StatusCode_id,RequestDescription,RequestNo 
-PR01,PURCHASEORDER01,saved,PRORDER,19101
+ID,PR_Number,PRType,StatusCode_ID,RequestDescription,RequestNo,currency_code,createdBy,createdAt
+01,PR1001,Standard,open,Purchase Request 1001,1000000000,USD,admin,2024-11-22T12:00:00Z
+02,PR1002,Urgent,saved,Purchase Request 1002,1000000001,EUR,manager,2024-11-21T12:00:00Z
+03,PR1003,Standard,in_approval,Purchase Request 1003,1000000002,INR,user1,2024-11-20T12:00:00Z

@@ -1,2 +1,4 @@
-_HeaderUUID_ID,user
-10da4e62-edbc-41e1-9943-0cb046498746,MARCIN
+_HeaderUUID_ID,user,createdAt
+01,admin,2024-11-22T12:30:00Z
+02,manager,2024-11-21T12:30:00Z
+03,user1,2024-11-20T12:30:00Z

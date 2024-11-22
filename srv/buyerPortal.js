@@ -1,34 +1,34 @@
-const cds = require('@sap/cds');
+// const cds = require('@sap/cds');
 
-module.exports = cds.service.impl(async function () {
-    const { Headers } = this.entities;
+// module.exports = cds.service.impl(async function () {
+//     const { Headers } = this.entities;
 
-    // When a new draft is created
-    this.on('NEW', 'Headers.drafts', async (req) => {
-        try {
-            // Start a database transaction
-            const tx = cds.tx(req);
+//     // When a new draft is created
+//     this.on('NEW', 'Headers.draft', async (req) => {
+//         try {
+//             // Start a database transaction
+//             const tx = cds.tx(req);
 
-            // Fetch the current maximum value of "Request Item Number"
-            const maxItemNumber = await tx.run(
-                SELECT.one('RequestNo')
-                    .from(Headers)
-                    .orderBy({ Request_Item_Number: 'desc' })
-            );
+//             // Fetch the current maximum value of "Request Item Number"
+//             const maxItemNumber = await tx.run(
+//                 SELECT.one('RequestNo')
+//                     .from(Headers)
+//                     .orderBy({ Request_Item_Number: 'desc' })
+//             );
 
-            // Calculate the next "Request Item Number"
-            const nextItemNumber = maxItemNumber ? maxItemNumber.RequestNo + 1 : 1;
+//             // Calculate the next "Request Item Number"
+//             const nextItemNumber = maxItemNumber ? maxItemNumber.RequestNo + 1 : 1;
 
-            // Set the incremented value in the incoming draft data
-            req.data.RequestNo = nextItemNumber;
+//             // Set the incremented value in the incoming draft data
+//             req.data.RequestNo = nextItemNumber;
 
-            console.log(`New draft created with Request Item Number: ${nextItemNumber}`);
+//             console.log(`New draft created with Request Item Number: ${nextItemNumber}`);
 
-            // Return the draft data with the updated field
-            return req.data;
-        } catch (error) {
-            console.error('Error while handling NEW draft event:', error);
-            req.error(500, 'Unable to create draft with incremented Request Item Number');
-        }
-    });
-});
+//             // Return the draft data with the updated field
+//             return req.data;
+//         } catch (error) {
+//             console.error('Error while handling NEW draft event:', error);
+//             req.error(500, 'Unable to create draft with incremented Request Item Number');
+//         }
+//     });
+// });
