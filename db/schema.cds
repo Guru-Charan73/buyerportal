@@ -78,7 +78,7 @@ context master {
         approved    = 'approved';
     }
 
-    // type Currency : Association to sap.common.Currencies;
+
 
     entity Headers : managed, cuid {
         PR_Number          : String(10);
@@ -89,8 +89,8 @@ context master {
         RequestDescription : String;
         Comments           : Composition of many comments
                                  on Comments._HeaderUUID = $self;
-        RequestNo          : String(10);
-        currency           : Currency;
+        RequestNo          : Integer;
+        Currency           : Currency
 
     }
 
