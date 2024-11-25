@@ -95,7 +95,7 @@ context master {
     }
 
     entity RequestItem : managed, cuid {
-        PRItemNumber        : String(10);
+        PRItemNumber        : Integer;
         Material            : String;
         MaterialDescription : String;
         PurOrg              : String;
